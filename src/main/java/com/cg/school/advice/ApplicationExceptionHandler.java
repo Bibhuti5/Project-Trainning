@@ -13,7 +13,7 @@ import com.cg.school.exception.UserNotFoundException;
 
 @RestControllerAdvice
 public class ApplicationExceptionHandler{
-	@ResponseStatus(HttpStatus.BAD_REQUEST)
+	/*@ResponseStatus(HttpStatus.BAD_REQUEST)
 	@ExceptionHandler(MethodArgumentNotValidException.class)
 	public Map<String, String> handleInvalidArgument(MethodArgumentNotValidException ex) {
 		Map<String, String> errorMap = new HashMap<>();
@@ -21,7 +21,7 @@ public class ApplicationExceptionHandler{
 			errorMap.put(error.getField(), error.getDefaultMessage());
 		});
 		return errorMap;
-	}
+	}*/
 
 	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
 	@ExceptionHandler(UserNotFoundException.class)
