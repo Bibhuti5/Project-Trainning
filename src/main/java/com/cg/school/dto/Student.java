@@ -22,6 +22,5 @@ public class Student {
 	private String motherName;
     private Long phone;
     private String address;
-	private Photo photo;
 
 }
